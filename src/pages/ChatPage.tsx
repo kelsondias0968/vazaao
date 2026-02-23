@@ -104,7 +104,7 @@ const ChatPage = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen max-w-lg mx-auto bg-telegram-chat-bg">
+    <div className="flex flex-col h-[100dvh] max-w-lg mx-auto bg-telegram-chat-bg overflow-hidden relative">
       {/* Header */}
       <div className="flex items-center gap-3 px-4 py-3 bg-telegram-header border-b border-border/20 flex-shrink-0">
         <button onClick={() => navigate("/")} className="text-primary">
@@ -152,7 +152,7 @@ const ChatPage = () => {
       </div>
 
       {/* User Options / Input */}
-      <div className="flex-shrink-0 bg-telegram-header border-t border-border/20 px-3 py-3">
+      <div className="flex-shrink-0 bg-telegram-header border-t border-border/20 px-3 pt-3 pb-[calc(12px+env(safe-area-inset-bottom))]">
         {userOptions ? (
           <div className="flex flex-wrap gap-2 justify-center">
             {userOptions.map((opt, i) => (

@@ -8,7 +8,7 @@ const Index = () => {
 
   return (
     <div
-      className="flex min-h-screen items-center justify-center p-4"
+      className="flex min-h-[100dvh] items-center justify-center p-4"
       style={{ backgroundImage: `url(${telegramPattern})`, backgroundSize: "cover" }}
     >
       <motion.div
